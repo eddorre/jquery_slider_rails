@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <%= stylesheet_link_tag 'jquery-ui-1.7.2.custom.css' %>
+    <%= javascript_include_tag 'jquery-1.3.2.min.js', 'jquery-ui-1.7.2.custom.min.js' %>
+  </head>
+  <body>
+    <h1>Stocks</h1>
+    
+    <div id="x_slider" style="font-size:62.5%; width:350px;"></div>
+     
+     <div>
+       <p>Showing all stocks between <span id="x_low_selected"><%= @price_range.first %></span> and <span id="x_high_selected"><%= @price_range.last %></span></p>
+     </div>
+
+    <ul id="x_stock_list">
+      <%= render 'stock_list', :stocks => @stocks %>
+    </ul>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#x_slider").slider( { 
+          range: true,
+          step: 10,
+          max: <%= @price_range.last %>,
+          min: <%= @price_range.first %>,
+          values: [<%= @price_range.first %>, <%= @price_range.last %> ],
+          stop: function(event, ui) {
+            var prices = $('#x_slider').slider('option', 'values');
+            $('#x_low_selected').html(prices[0]);
+            $('#x_high_selected').html(prices[1]);
+            $.ajax({
+              type: "GET",
+              data: ({ low: prices[0], high: prices[1] }),
+              url: 'http://0.0.0.0:3000/stocks',
+              dataType: 'script'
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

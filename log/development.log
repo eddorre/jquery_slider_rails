@@ -1,0 +1,933 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStocks (20091106014638)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "stocks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "price" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091106014638')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("stocks")[0m
+  [4;36;1mStock Create (0.5ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('earum', 388, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;35;1mStock Create (0.4ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('sapiente', 308, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;36;1mStock Create (0.5ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('voluptatibus', 99, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;35;1mStock Create (0.3ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('voluptatem', 362, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;36;1mStock Create (0.3ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('ut', 151, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;35;1mStock Create (0.5ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('molestiae', 145, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;36;1mStock Create (0.4ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('sit', 303, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;35;1mStock Create (0.3ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('suscipit', 469, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;36;1mStock Create (0.4ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('aut', 177, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;35;1mStock Create (0.4ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('et', 314, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;36;1mStock Create (0.4ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('sed', 67, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;35;1mStock Create (0.4ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('in', 102, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;36;1mStock Create (0.4ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('officia', 418, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;35;1mStock Create (0.4ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('alias', 417, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;36;1mStock Create (0.4ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('excepturi', 80, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;35;1mStock Create (0.4ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('at', 59, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;36;1mStock Create (0.3ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('et', 34, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;35;1mStock Create (0.3ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('nesciunt', 60, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;36;1mStock Create (0.4ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('assumenda', 199, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+  [4;35;1mStock Create (0.4ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('assumenda', 465, '2009-11-06 02:27:53', '2009-11-06 02:27:53')[0m
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:28:42) [GET]
+  [4;36;1mStock Load (1.9ms)[0m   [0;1mSELECT * FROM "stocks" [0m
+  [4;35;1mStock Load (0.3ms)[0m   [0mSELECT price FROM "stocks" ORDER BY price ASC LIMIT 1[0m
+  [4;36;1mStock Load (0.2ms)[0m   [0;1mSELECT price FROM "stocks" ORDER BY price DESC LIMIT 1[0m
+Rendered stocks/_stock_list (3.1ms)
+Completed in 22ms (View: 13, DB: 2) | 200 OK [http://0.0.0.0/stocks]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:29:00) [GET]
+  [4;35;1mStock Load (1.7ms)[0m   [0mSELECT * FROM "stocks" [0m
+  [4;36;1mStock Load (0.3ms)[0m   [0;1mSELECT price FROM "stocks" ORDER BY price ASC LIMIT 1[0m
+  [4;35;1mStock Load (0.3ms)[0m   [0mSELECT price FROM "stocks" ORDER BY price DESC LIMIT 1[0m
+Rendering stocks/index
+
+ActionView::TemplateError (Missing template stocks/_stocks_list.erb in view path app/views) on line #18 of app/views/stocks/index.html.erb:
+15:      </div>
+16: 
+17:     <ul id="x_stock_list">
+18:       <%= render 'stocks_list', :stocks => @stocks %>
+19:     </ul>
+20: 
+21:     <script type="text/javascript">
+
+    app/views/stocks/index.html.erb:18
+    app/controllers/stocks_controller.rb:11:in `index'
+
+Rendered rescues/_trace (133.5ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:29:32) [GET]
+  [4;36;1mStock Load (1.7ms)[0m   [0;1mSELECT * FROM "stocks" [0m
+  [4;35;1mStock Load (0.3ms)[0m   [0mSELECT price FROM "stocks" ORDER BY price ASC LIMIT 1[0m
+  [4;36;1mStock Load (0.5ms)[0m   [0;1mSELECT price FROM "stocks" ORDER BY price DESC LIMIT 1[0m
+Rendering stocks/index
+Rendered stocks/_stock_list (1.9ms)
+Completed in 18ms (View: 9, DB: 2) | 200 OK [http://0.0.0.0/stocks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:29:32) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.3.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:29:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.2.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:29:32) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.2.custom.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:30:01) [GET]
+  [4;35;1mStock Load (1.7ms)[0m   [0mSELECT * FROM "stocks" [0m
+  [4;36;1mStock Load (0.2ms)[0m   [0;1mSELECT price FROM "stocks" ORDER BY price ASC LIMIT 1[0m
+  [4;35;1mStock Load (0.3ms)[0m   [0mSELECT price FROM "stocks" ORDER BY price DESC LIMIT 1[0m
+Rendering stocks/index
+Rendered stocks/_stock_list (0.2ms)
+Completed in 18ms (View: 10, DB: 2) | 200 OK [http://0.0.0.0/stocks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:30:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.2.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:30:01) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.3.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:30:01) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.2.custom.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:30:47) [GET]
+  [4;36;1mStock Load (1.7ms)[0m   [0;1mSELECT * FROM "stocks" [0m
+  [4;35;1mStock Load (0.2ms)[0m   [0mSELECT price FROM "stocks" ORDER BY price ASC LIMIT 1[0m
+
+NoMethodError (undefined method `first' for #<Stock price: "102">):
+  app/models/stock.rb:9:in `lowest_price'
+  app/controllers/stocks_controller.rb:9:in `index'
+
+Rendered rescues/_trace (114.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:31:03) [GET]
+  [4;36;1mStock Load (1.7ms)[0m   [0;1mSELECT * FROM "stocks" [0m
+  [4;35;1mStock Load (0.2ms)[0m   [0mSELECT price FROM "stocks" ORDER BY price ASC LIMIT 1[0m
+  [4;36;1mStock Load (0.2ms)[0m   [0;1mSELECT price FROM "stocks" ORDER BY price DESC LIMIT 1[0m
+Rendering stocks/index
+Rendered stocks/_stock_list (0.2ms)
+Completed in 12ms (View: 4, DB: 2) | 200 OK [http://0.0.0.0/stocks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:31:03) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.2.custom.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:31:03) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.3.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:31:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.2.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:31:04) [GET]
+  [4;35;1mStock Load (1.6ms)[0m   [0mSELECT * FROM "stocks" [0m
+  [4;36;1mStock Load (0.2ms)[0m   [0;1mSELECT price FROM "stocks" ORDER BY price ASC LIMIT 1[0m
+  [4;35;1mStock Load (0.2ms)[0m   [0mSELECT price FROM "stocks" ORDER BY price DESC LIMIT 1[0m
+Rendering stocks/index
+Rendered stocks/_stock_list (0.2ms)
+Completed in 14ms (View: 4, DB: 2) | 200 OK [http://0.0.0.0/stocks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:31:04) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.3.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:31:04) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.2.custom.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:31:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.2.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:31:04) [GET]
+  [4;36;1mStock Load (93.2ms)[0m   [0;1mSELECT * FROM "stocks" [0m
+  [4;35;1mStock Load (0.3ms)[0m   [0mSELECT price FROM "stocks" ORDER BY price ASC LIMIT 1[0m
+  [4;36;1mStock Load (0.3ms)[0m   [0;1mSELECT price FROM "stocks" ORDER BY price DESC LIMIT 1[0m
+Rendering stocks/index
+Rendered stocks/_stock_list (0.2ms)
+Completed in 111ms (View: 5, DB: 94) | 200 OK [http://0.0.0.0/stocks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:31:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.2.custom.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:31:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.3.2.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:31:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.2.custom.min.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mStock Load (1.8ms)[0m   [0;1mSELECT * FROM "stocks" [0m
+  [4;35;1mStock Load (1.9ms)[0m   [0mSELECT * FROM "stocks" ORDER BY price[0m
+  [4;36;1mStock Load (1.8ms)[0m   [0;1mSELECT * FROM "stocks" ORDER BY price[0m
+  [4;35;1mStock Load (1.8ms)[0m   [0mSELECT * FROM "stocks" ORDER BY price ASC[0m
+  [4;36;1mStock Load (2.6ms)[0m   [0;1mSELECT * FROM "stocks" ORDER BY price DESC[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStocks (20091106014638)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "stocks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091106014638')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("stocks")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "stocks" [0m
+  [4;36;1mStock Create (0.5ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('labore', 398, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;35;1mStock Create (0.4ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('et', 424, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;36;1mStock Create (0.4ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('vel', 58, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;35;1mStock Create (0.4ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('neque', 133, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;36;1mStock Create (0.3ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('nemo', 37, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;35;1mStock Create (0.4ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('nostrum', 129, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;36;1mStock Create (0.3ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('quod', 373, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;35;1mStock Create (0.4ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('eligendi', 214, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;36;1mStock Create (0.4ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('blanditiis', 20, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;35;1mStock Create (0.3ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('vitae', 19, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;36;1mStock Create (0.4ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('ipsam', 4, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;35;1mStock Create (0.4ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('et', 206, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;36;1mStock Create (0.4ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('aspernatur', 83, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;35;1mStock Create (0.4ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('et', 117, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;36;1mStock Create (0.4ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('cum', 207, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;35;1mStock Create (0.3ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('porro', 494, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;36;1mStock Create (0.6ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('voluptatum', 289, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;35;1mStock Create (0.4ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('eum', 407, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;36;1mStock Create (0.4ms)[0m   [0;1mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('accusamus', 323, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;35;1mStock Create (0.4ms)[0m   [0mINSERT INTO "stocks" ("name", "price", "created_at", "updated_at") VALUES('aut', 155, '2009-11-06 02:40:26', '2009-11-06 02:40:26')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "stocks" [0m
+  [4;35;1mSQL (1.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:45:24) [GET]
+  [4;36;1mStock Load (1.9ms)[0m   [0;1mSELECT * FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+Rendering stocks/index
+Rendered stocks/_stock_list (2.5ms)
+Completed in 39ms (View: 29, DB: 2) | 200 OK [http://0.0.0.0/stocks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:45:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:45:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_gloss-wave_35_f6a828_500x100.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:45:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:45:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_fdf5ce_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:47:08) [GET]
+  [4;35;1mStock Load (1.8ms)[0m   [0mSELECT * FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+Rendering stocks/index
+Rendered stocks/_stock_list (1.2ms)
+Completed in 18ms (View: 9, DB: 2) | 200 OK [http://0.0.0.0/stocks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:47:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:47:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_gloss-wave_35_f6a828_500x100.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:47:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:47:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_fdf5ce_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:47:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_65_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:47:12) [GET]
+  Parameters: {"high"=>"494", "_"=>"1257475632426", "low"=>"64"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mStock Load (0.3ms)[0m   [0;1mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '494' AND '64') [0m
+Rendered stocks/_stock_list (30.8ms)
+Completed in 38ms (View: 32, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257475632426&low=64&high=494]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:47:13) [GET]
+  Parameters: {"high"=>"394", "_"=>"1257475633929", "low"=>"64"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;35;1mStock Load (0.2ms)[0m   [0mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '394' AND '64') [0m
+Rendered stocks/_stock_list (1.3ms)
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257475633929&low=64&high=394]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:47:15) [GET]
+  Parameters: {"high"=>"394", "_"=>"1257475635937", "low"=>"4"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mStock Load (0.2ms)[0m   [0;1mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '394' AND '4') [0m
+Rendered stocks/_stock_list (1.2ms)
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257475635937&low=4&high=394]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:47:17) [GET]
+  Parameters: {"high"=>"494", "_"=>"1257475637335", "low"=>"4"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;35;1mStock Load (0.2ms)[0m   [0mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '494' AND '4') [0m
+Rendered stocks/_stock_list (1.3ms)
+Completed in 10ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257475637335&low=4&high=494]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:48:14) [GET]
+  [4;36;1mStock Load (1.7ms)[0m   [0;1mSELECT * FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+Rendering stocks/index
+Rendered stocks/_stock_list (1.1ms)
+Completed in 13ms (View: 3, DB: 2) | 200 OK [http://0.0.0.0/stocks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:48:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:48:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:48:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_gloss-wave_35_f6a828_500x100.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:48:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_fdf5ce_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:49:10) [GET]
+  [4;35;1mStock Load (1.7ms)[0m   [0mSELECT * FROM "stocks" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+Rendering stocks/index
+Rendered stocks/_stock_list (1.8ms)
+Completed in 14ms (View: 4, DB: 2) | 200 OK [http://0.0.0.0/stocks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:49:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:49:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_gloss-wave_35_f6a828_500x100.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:49:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:49:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_fdf5ce_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:49:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_65_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:49:22) [GET]
+  Parameters: {"high"=>"494", "_"=>"1257475762276", "low"=>"64"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mStock Load (1.3ms)[0m   [0;1mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '64' AND '494') [0m
+Rendered stocks/_stock_list (3.7ms)
+Completed in 130ms (View: 5, DB: 2) | 200 OK [http://0.0.0.0/stocks?_=1257475762276&low=64&high=494]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:49:27) [GET]
+  Parameters: {"high"=>"454", "_"=>"1257475767765", "low"=>"64"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;35;1mStock Load (1.3ms)[0m   [0mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '64' AND '454') [0m
+Rendered stocks/_stock_list (3.8ms)
+Completed in 12ms (View: 4, DB: 2) | 200 OK [http://0.0.0.0/stocks?_=1257475767765&low=64&high=454]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:49:29) [GET]
+  Parameters: {"high"=>"414", "_"=>"1257475769312", "low"=>"64"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mStock Load (1.1ms)[0m   [0;1mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '64' AND '414') [0m
+Rendered stocks/_stock_list (3.4ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257475769312&low=64&high=414]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:49:31) [GET]
+  Parameters: {"high"=>"414", "_"=>"1257475771100", "low"=>"94"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;35;1mStock Load (1.1ms)[0m   [0mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '94' AND '414') [0m
+Rendered stocks/_stock_list (3.4ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257475771100&low=94&high=414]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:49:32) [GET]
+  Parameters: {"high"=>"414", "_"=>"1257475772272", "low"=>"204"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mStock Load (0.8ms)[0m   [0;1mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '204' AND '414') [0m
+Rendered stocks/_stock_list (3.7ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257475772272&low=204&high=414]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:53:17) [GET]
+  Parameters: {"high"=>"334", "_"=>"1257475997847", "low"=>"204"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;35;1mStock Load (0.6ms)[0m   [0mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '204' AND '334') [0m
+Rendered stocks/_stock_list (3.5ms)
+Completed in 13ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257475997847&low=204&high=334]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:54:52) [GET]
+  [4;36;1mStock Load (1.7ms)[0m   [0;1mSELECT * FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+Rendering stocks/index
+Rendered stocks/_stock_list (1.2ms)
+Completed in 17ms (View: 9, DB: 2) | 200 OK [http://0.0.0.0/stocks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:54:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:54:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_gloss-wave_35_f6a828_500x100.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:54:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:54:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_fdf5ce_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:54:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_65_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:54:55) [GET]
+  Parameters: {"high"=>"494", "_"=>"1257476095141", "low"=>"64"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;35;1mStock Load (1.3ms)[0m   [0mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '64' AND '494') [0m
+Rendered stocks/_stock_list (3.8ms)
+Completed in 12ms (View: 4, DB: 2) | 200 OK [http://0.0.0.0/stocks?_=1257476095141&low=64&high=494]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:55:04) [GET]
+  Parameters: {"high"=>"494", "_"=>"1257476104895", "low"=>"84"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mStock Load (1.4ms)[0m   [0;1mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '84' AND '494') [0m
+Rendered stocks/_stock_list (4.5ms)
+Completed in 13ms (View: 5, DB: 2) | 200 OK [http://0.0.0.0/stocks?_=1257476104895&low=84&high=494]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:55:05) [GET]
+  Parameters: {"high"=>"494", "_"=>"1257476105730", "low"=>"134"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;35;1mStock Load (0.9ms)[0m   [0mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '134' AND '494') [0m
+Rendered stocks/_stock_list (3.9ms)
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257476105730&low=134&high=494]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:55:06) [GET]
+  Parameters: {"high"=>"394", "_"=>"1257476106965", "low"=>"134"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mStock Load (0.7ms)[0m   [0;1mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '134' AND '394') [0m
+Rendered stocks/_stock_list (2.7ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257476106965&low=134&high=394]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:55:07) [GET]
+  Parameters: {"high"=>"344", "_"=>"1257476107910", "low"=>"134"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;35;1mStock Load (0.6ms)[0m   [0mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '134' AND '344') [0m
+Rendered stocks/_stock_list (2.6ms)
+Completed in 10ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257476107910&low=134&high=344]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:55:08) [GET]
+  Parameters: {"high"=>"234", "_"=>"1257476108636", "low"=>"134"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mStock Load (0.5ms)[0m   [0;1mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '134' AND '234') [0m
+Rendered stocks/_stock_list (2.7ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257476108636&low=134&high=234]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:55:09) [GET]
+  Parameters: {"high"=>"204", "_"=>"1257476109535", "low"=>"134"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;35;1mStock Load (0.3ms)[0m   [0mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '134' AND '204') [0m
+Rendered stocks/_stock_list (2.3ms)
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257476109535&low=134&high=204]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:55:10) [GET]
+  Parameters: {"high"=>"494", "_"=>"1257476110668", "low"=>"134"}
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mStock Load (1.0ms)[0m   [0;1mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '134' AND '494') [0m
+Rendered stocks/_stock_list (3.3ms)
+Completed in 13ms (View: 4, DB: 3) | 200 OK [http://0.0.0.0/stocks?_=1257476110668&low=134&high=494]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:55:12) [GET]
+  Parameters: {"high"=>"494", "_"=>"1257476112426", "low"=>"64"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;35;1mStock Load (1.2ms)[0m   [0mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '64' AND '494') [0m
+Rendered stocks/_stock_list (3.6ms)
+Completed in 12ms (View: 4, DB: 2) | 200 OK [http://0.0.0.0/stocks?_=1257476112426&low=64&high=494]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:55:13) [GET]
+  Parameters: {"high"=>"494", "_"=>"1257476113222", "low"=>"4"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mStock Load (1.5ms)[0m   [0;1mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '4' AND '494') [0m
+Rendered stocks/_stock_list (4.1ms)
+Completed in 12ms (View: 4, DB: 2) | 200 OK [http://0.0.0.0/stocks?_=1257476113222&low=4&high=494]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:55:36) [GET]
+  [4;35;1mStock Load (1.8ms)[0m   [0mSELECT * FROM "stocks" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+Rendering stocks/index
+Rendered stocks/_stock_list (1.3ms)
+Completed in 20ms (View: 10, DB: 2) | 200 OK [http://0.0.0.0/stocks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:55:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:55:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_gloss-wave_35_f6a828_500x100.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:55:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:55:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_fdf5ce_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:55:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_65_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:55:42) [GET]
+  Parameters: {"high"=>"494", "_"=>"1257476142446", "low"=>"74"}
+  [4;36;1mSQL (71.8ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mStock Load (1.3ms)[0m   [0;1mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '74' AND '494') [0m
+Rendered stocks/_stock_list (3.8ms)
+Completed in 84ms (View: 4, DB: 73) | 200 OK [http://0.0.0.0/stocks?_=1257476142446&low=74&high=494]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:57:16) [GET]
+  [4;35;1mStock Load (1.9ms)[0m   [0mSELECT * FROM "stocks" [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+Rendering stocks/index
+Rendered stocks/_stock_list (1.3ms)
+Completed in 21ms (View: 9, DB: 3) | 200 OK [http://0.0.0.0/stocks]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:57:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_f6f6f6_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:57:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_gloss-wave_35_f6a828_500x100.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:57:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:57:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_100_fdf5ce_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-05 18:57:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/ui-bg_glass_65_ffffff_1x400.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:57:18) [GET]
+  Parameters: {"high"=>"494", "_"=>"1257476238620", "low"=>"44"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mStock Load (1.3ms)[0m   [0;1mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '44' AND '494') [0m
+Rendered stocks/_stock_list (4.0ms)
+Completed in 13ms (View: 5, DB: 2) | 200 OK [http://0.0.0.0/stocks?_=1257476238620&low=44&high=494]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:57:20) [GET]
+  Parameters: {"high"=>"414", "_"=>"1257476240506", "low"=>"44"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;35;1mStock Load (1.1ms)[0m   [0mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '44' AND '414') [0m
+Rendered stocks/_stock_list (3.4ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257476240506&low=44&high=414]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:57:21) [GET]
+  Parameters: {"high"=>"364", "_"=>"1257476241600", "low"=>"44"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mStock Load (1.0ms)[0m   [0;1mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '44' AND '364') [0m
+Rendered stocks/_stock_list (3.9ms)
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257476241600&low=44&high=364]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:57:40) [GET]
+  Parameters: {"high"=>"364", "_"=>"1257476260569", "low"=>"154"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;35;1mStock Load (0.6ms)[0m   [0mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '154' AND '364') [0m
+Rendered stocks/_stock_list (2.7ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257476260569&low=154&high=364]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:57:42) [GET]
+  Parameters: {"high"=>"194", "_"=>"1257476262944", "low"=>"154"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mStock Load (0.4ms)[0m   [0;1mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '154' AND '194') [0m
+Rendered stocks/_stock_list (2.3ms)
+Completed in 11ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257476262944&low=154&high=194]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:57:45) [GET]
+  Parameters: {"high"=>"194", "_"=>"1257476265522", "low"=>"194"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;35;1mStock Load (0.2ms)[0m   [0mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '194' AND '194') [0m
+Rendered stocks/_stock_list (1.2ms)
+Completed in 9ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257476265522&low=194&high=194]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:57:46) [GET]
+  Parameters: {"high"=>"194", "_"=>"1257476266820", "low"=>"174"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mStock Load (0.2ms)[0m   [0;1mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '174' AND '194') [0m
+Rendered stocks/_stock_list (1.4ms)
+Completed in 10ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257476266820&low=174&high=194]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:57:48) [GET]
+  Parameters: {"high"=>"204", "_"=>"1257476268100", "low"=>"174"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;35;1mStock Load (0.2ms)[0m   [0mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '174' AND '204') [0m
+Rendered stocks/_stock_list (1.2ms)
+Completed in 10ms (View: 3, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257476268100&low=174&high=204]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:57:49) [GET]
+  Parameters: {"high"=>"214", "_"=>"1257476269335", "low"=>"174"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;36;1mStock Load (0.5ms)[0m   [0;1mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '174' AND '214') [0m
+Rendered stocks/_stock_list (2.5ms)
+Completed in 10ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257476269335&low=174&high=214]
+
+
+Processing StocksController#index (for 127.0.0.1 at 2009-11-05 18:57:53) [GET]
+  Parameters: {"high"=>"434", "_"=>"1257476273085", "low"=>"174"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT min("stocks".price) AS min_price FROM "stocks" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT max("stocks".price) AS max_price FROM "stocks" [0m
+  [4;35;1mStock Load (0.9ms)[0m   [0mSELECT * FROM "stocks" WHERE ("stocks"."price" BETWEEN '174' AND '434') [0m
+Rendered stocks/_stock_list (3.3ms)
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://0.0.0.0/stocks?_=1257476273085&low=174&high=434]
