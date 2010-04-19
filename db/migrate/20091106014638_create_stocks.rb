@@ -5,8 +5,9 @@ class CreateStocks < ActiveRecord::Migration
       t.integer :price
       t.timestamps
       
-      t.index :price
     end
+    
+    add_index :stocks, :price
   end
 
   def self.down
